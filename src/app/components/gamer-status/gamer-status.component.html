@@ -1,0 +1,22 @@
+<nz-card>
+    <div nz-row nzJustify="space-around" nzAlign="middle">
+        <div nz-col nzXs="8" nzSm="8" nzMd="8" nzLg="8" nzXl="8" class="padding-10 text-center">
+          <img width="100%" [src]="gamer.avatar_image" alt="profile" />
+        </div>
+        <div nz-col nzXs="16" nzSm="16" nzMd="16" nzLg="16" nzXl="16">
+            <span class="gamer-name">{{gamer.name}}</span>
+        </div>
+    </div>  
+    <div nz-row class="margin-top-10">
+        <div nz-col nzXs="8" nzSm="8" nzMd="8" nzLg="8" nzXl="8" class="point-section">
+          <img src="/assets/icon/trophy.svg" alt="trophy" width="20"> <span class="points">{{gamer.points|number}} <small>puntos</small></span>
+        </div>  
+        <div nz-col nzXs="8" nzSm="8" nzMd="8" nzLg="8" nzXl="8"  class="point-section">
+            <img src="/assets/icon/gamepad.svg" alt="gamepad" width="30"> <span>{{gamer.games_number|number}} <small>juegos</small></span>
+        </div>  
+        <div nz-col nzXs="8" nzSm="8" nzMd="8" nzLg="8" nzXl="8"  class="text-right">
+            <button nz-button nzType="primary">VER</button>
+        </div>  
+    </div>  
+</nz-card>
+  

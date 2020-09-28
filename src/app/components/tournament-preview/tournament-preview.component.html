@@ -1,0 +1,21 @@
+<nz-card>
+    <div nz-row nzJustify="center" nzAlign="middle">
+        <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24" class="tournament-name">
+            <span>{{tournament.name}}</span>
+        </div>
+    </div>  
+    <div nz-row  nzAlign="middle" nzJustify="center">
+        <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="24" nzXl="24" class=" text-center">
+          <img class="image-game" [src]="tournament.images[0]" alt="tournament image" style="margin: auto;">
+        </div>
+    </div>  
+    <div nz-row class="margin-top-10">
+        <div nz-col nzXs="8" nzSm="8" nzMd="8" nzLg="8" nzXl="8" class="point-section">
+          <img src="/assets/icon/man.svg" alt="man" width="20"> <span class="points">{{tournament.participants_number}} <small>participantes</small></span>
+        </div>  
+        <div nz-col nzXs="16" nzSm="16" nzMd="16" nzLg="16" nzXl="16"  class="text-right">
+            <button nz-button nzType="primary" [disabled]="!CanJoInEvent()" (click)="JoinInEvent()">{{!CanJoInEvent()?'PARTICIPANDO':'PARTICIPAR'}}</button>
+        </div>  
+    </div>  
+</nz-card>
+  

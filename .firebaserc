@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "gamers-unipanermicana"
+  },
+  "targets": {
+    "gamers-unipanermicana": {
+      "hosting": {
+        "gamers-unipanamericana": [
+          "gamers-unipanamericana"
+        ]
+      }
+    }
+  }
+}

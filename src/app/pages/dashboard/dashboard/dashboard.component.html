@@ -1,0 +1,27 @@
+<div nz-row>
+    <div nz-col nzXs="20" nzSm="20" nzMd="20" nzLg="20" nzXl="20">
+        <h2>Top 4 Jugadores</h2>
+    </div>
+    <div nz-col nzXs="4" nzSm="4" nzMd="4" nzLg="4" nzXl="4">
+       
+    </div>
+</div>
+<div nz-row class="div-list-content" [nzGutter]="16">
+    <div nz-col nzXs="24" nzSm="24" nzMd="6" nzLg="6" nzXl="6" *ngFor="let gamer of pageModel.top4Gamers;">
+        <component-gamer-status [Gamer]="gamer"></component-gamer-status>
+    </div>
+</div>
+
+<div nz-row style="margin-top:50px">
+    <div nz-col nzXs="20" nzSm="20" nzMd="20" nzLg="20" nzXl="20">
+        <h2>Top 4 Juegos</h2>
+    </div>
+    <div nz-col nzXs="4" nzSm="4" nzMd="4" nzLg="4" nzXl="4">
+       
+    </div>
+</div>
+<div nz-row class="div-list-content" [nzGutter]="16">
+    <div nz-col nzXs="24" nzSm="24" nzMd="8" nzLg="8" nzXl="8" *ngFor="let tournament of pageModel.top4Tournaments;">
+        <component-tournament-preview [Tournament]="tournament"></component-tournament-preview>
+    </div>
+</div>

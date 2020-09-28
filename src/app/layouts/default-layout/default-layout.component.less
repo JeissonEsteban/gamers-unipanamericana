@@ -1,0 +1,83 @@
+@import '../../../color.less';
+  .logo {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+  }
+  nz-layout{
+      height: 100vh;
+      background-color: @bk-1;
+  }
+  nz-header {
+    background-color: @bk-1;
+    padding: 0;
+  }
+
+  nz-content {
+   
+  }
+  nz-sider{
+    background-color: rgba(255,255,255,0.04);
+  }
+  nz-sider.ant-layout-sider .text{
+    margin-left: 10px;
+  }
+  nz-sider.ant-layout-sider-collapsed .text{
+    display: none;
+  }
+  .ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub{
+    background-color: rgba(255,255,255,0.04);
+  }
+  .ant-menu-dark .ant-menu-inline.ant-menu-sub{
+    background-color: rgba(255,255,255,0.04) !important;
+  }
+
+  nz-breadcrumb {
+    margin: 16px 0;
+  }
+
+  .inner-content {
+    background-color: transparent;
+    padding: 0 15px;
+    padding-bottom: 50px;
+  }
+
+
+  nz-breadcrumb{
+      color:white;
+  }
+  nz-breadcrumb-item{
+      color:white;
+  }
+
+ nz-header img{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.online-icon{
+  color:@green-6;
+  text-align: right;
+}
+.profile-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:flex-end;
+  color:white;
+  text-align: right;
+  margin-right: 20px;
+}
+.ant-layout-header{line-height:normal}
+.profile-content{padding:10px}
+.ant-dropdown-menu{background-color:#1d1d2d;color:white;}
+.ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title{color: white;}
+a{color:white}
+.section-ribbon{height: 60px; width: 100%; background-color:rgba(255,255,255,0.01);display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding:0 10px;}
+h5{font-size: 1.7em;color:white;}
+.div-container-menu-icon{color:white;padding:8px;display: flex;justify-content: flex-start;align-items: center;}
+.div-menu-icon{background-image: url('/assets/icon/menu-close.png');height: 30px;width: 30px;cursor:pointer; transition: background-image 0.5s;margin-right: 10px;}
+.div-menu-icon:hover{background-image: url('/assets/icon/menu-open.png');height: 30px;width: 30px;cursor:pointer;}
